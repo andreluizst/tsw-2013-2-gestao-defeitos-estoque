@@ -64,7 +64,7 @@ public class PropFuncionario extends javax.swing.JDialog {
         });
         f= Fachada.getInstancia();
         res= Resource.getInstancia();
-        /*
+        
         try {
             for (Estado es : f.listarEstado()){
                 jcbxEstados.addItem(es);
@@ -72,7 +72,7 @@ public class PropFuncionario extends javax.swing.JDialog {
         } catch (GeralException ex) {
             JOptionPane.showMessageDialog(null, ex.getMessage());
         }
-        */
+        
         if (funcionario == null ){
             this.setTitle("INCLUIR funcionário");
             isIns= true;
