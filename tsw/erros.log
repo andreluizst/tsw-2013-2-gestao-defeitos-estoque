@@ -1,0 +1,220 @@
+﻿
+Sistema -> 25/11/2012 - 22:43:26
+	ce.model.dao.RepositorioCategoria.excluir(): com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`estoque`.`produto`, CONSTRAINT `produto_fkCodCateg` FOREIGN KEY (`codCateg`) REFERENCES `categoria` (`CodCateg`))
+joao.souza -> 25/11/2012 - 22:43:26
+	ce.model.regra.ControladorCategoria.excluir(): Não é possível excluir a entrada informada, pois a mesma
+ está sendo usanda por um ou mais produto!
+Sistema -> 25/11/2012 - 22:46:37
+	ce.model.dao.RepositorioCategoria.excluir(): com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`estoque`.`produto`, CONSTRAINT `produto_fkCodCateg` FOREIGN KEY (`codCateg`) REFERENCES `categoria` (`CodCateg`))
+joao.souza -> 25/11/2012 - 22:46:37
+	ce.model.regra.ControladorCategoria.excluir(): Não é possível excluir a categoria informada, pois a mesma
+ está sendo usanda por um ou mais produto!
+Sistema -> 25/11/2012 - 22:48:07
+	ce.model.dao.RepositorioCategoria.excluir(): com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`estoque`.`produto`, CONSTRAINT `produto_fkCodCateg` FOREIGN KEY (`codCateg`) REFERENCES `categoria` (`CodCateg`))
+joao.souza -> 25/11/2012 - 22:48:07
+	ce.model.regra.ControladorCategoria.excluir(): Não é possível excluir a categoria informada, pois a mesma
+ está sendo usanda por um ou mais produto!
+root -> 27/11/2012 - 17:43:46
+	ce.util.GerenciadorConexao.conectar(): java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+joao.souza -> 27/11/2012 - 17:43:46
+	ce.model.regra.ControladorUsuario.validarLogin(): No momento não é possível validar o login.
+adm.sys -> 02/12/2012 - 20:40:02
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+adm.sys -> 02/12/2012 - 20:40:11
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+root -> 03/12/2012 - 11:57:15
+	ce.util.GerenciadorConexao.conectar(): java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+joao.souza -> 03/12/2012 - 11:57:15
+	ce.model.regra.ControladorUsuario.validarLogin(): No momento não é possível validar o login.
+Sistema -> 03/12/2012 - 11:57:46
+	ce.model.dao.RepositorioFornecedor.pesquisar(): java.sql.SQLException: Column 'codProd' not found.
+joao.souza -> 03/12/2012 - 11:57:46
+	ce.model.regra.ControladorFornecedor.pesquisar(): Erro ao tentar pesquisar fornecedor.
+Sistema -> 03/12/2012 - 12:47:38
+	ce.model.dao.RepositorioFornecedor.pesquisar(): com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after statement closed.
+joao.souza -> 03/12/2012 - 12:47:38
+	ce.model.regra.ControladorFornecedor.pesquisar(): Erro ao tentar pesquisar fornecedor.
+Sistema -> 03/12/2012 - 12:48:14
+	ce.model.dao.RepositorioFornecedor.pesquisar(): com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after statement closed.
+joao.souza -> 03/12/2012 - 12:48:14
+	ce.model.regra.ControladorFornecedor.pesquisar(): Erro ao tentar pesquisar fornecedor.
+Sistema -> 03/12/2012 - 12:48:26
+	ce.model.dao.RepositorioFornecedor.pesquisar(): com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after statement closed.
+joao.souza -> 03/12/2012 - 12:48:26
+	ce.model.regra.ControladorFornecedor.pesquisar(): Erro ao tentar pesquisar fornecedor.
+Sistema -> 04/12/2012 - 21:44:47
+	ce.model.dao.RepositorioProduto.listar(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'fp.nome' in 'order clause'
+joao.souza -> 04/12/2012 - 21:44:47
+	ce.model.regra.ControladorProduto.listar(): Erro ao tentar listar produto.
+joao.souza -> 05/12/2012 - 09:14:39
+	ce.model.regra.ControladorFornecedor.validarDados(): O campo nome deve ser preenchido.
+joao.souza -> 05/12/2012 - 09:17:50
+	ce.model.regra.ControladorFornecedor.validarDados(): O campo nome deve ser preenchido.
+joao.souza -> 05/12/2012 - 09:17:56
+	ce.model.regra.ControladorFornecedor.validarDados(): O campo nome deve ser preenchido.
+joao.souza -> 05/12/2012 - 09:21:20
+	ce.model.regra.ControladorFornecedor.validarDados(): O campo nome deve ser preenchido.
+joao.souza -> 05/12/2012 - 09:21:39
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+joao.souza -> 05/12/2012 - 09:21:51
+	ce.model.regra.ControladorFornecedor.validarDados(): CNPJ inválido.
+Sistema -> 05/12/2012 - 20:54:02
+	ce.model.dao.RepositorioFornecedor.excluir(): com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`estoque`.`fornxprod`, CONSTRAINT `fornxprod_fkCodForn` FOREIGN KEY (`codForn`) REFERENCES `fornecedor` (`codForn`))
+joao.souza -> 05/12/2012 - 20:54:02
+	ce.model.regra.ControladorFornecedor.excluir(): Não é possível excluir o fornecedor informado, pois o mesmo
+ está sendo usando em uma ou mais entrada e/ou saída!
+root -> 08/12/2012 - 23:50:20
+	ce.util.GerenciadorConexao.conectar(): java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+joao.souza -> 08/12/2012 - 23:50:20
+	ce.model.regra.ControladorUsuario.validarLogin(): No momento não é possível validar o login.
+joao.souza -> 09/12/2012 - 16:20:24
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+Sistema -> 09/12/2012 - 19:31:33
+	ce.model.dao.RepositorioEntrada.pesquisarNoPeriodo(): java.text.ParseException: Unparseable date: "01/11/2012"
+joao.souza -> 09/12/2012 - 19:31:33
+	ce.model.regra.ControladorEntrada.pesquisar(): Erro ao tentar pesquisar entrada.
+joao.souza -> 09/12/2012 - 21:12:01
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+joao.souza -> 09/12/2012 - 21:12:42
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+joao.souza -> 09/12/2012 - 21:12:57
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+joao.souza -> 09/12/2012 - 21:15:29
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido! [nome]
+joao.souza -> 09/12/2012 - 21:16:30
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+A senha deve ter seis ou mais caracteres.
+joao.souza -> 09/12/2012 - 21:16:45
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+A senha deve ter seis ou mais caracteres.
+joao.souza -> 09/12/2012 - 21:17:00
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+A senha deve ter seis ou mais caracteres.
+joao.souza -> 09/12/2012 - 21:20:51
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+A senha deve ter seis ou mais caracteres.
+joao.souza -> 09/12/2012 - 21:21:16
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+joao.souza -> 09/12/2012 - 21:21:18
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+joao.souza -> 09/12/2012 - 21:21:35
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+root -> 09/12/2012 - 19:23:06
+	ce.util.GerenciadorConexao.conectar(): java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+joao.souza -> 09/12/2012 - 19:23:06
+	ce.model.regra.ControladorUsuario.validarLogin(): No momento não é possível validar o login.
+Sistema -> 09/12/2012 - 21:39:11
+	ce.model.dao.RepositorioProduto.atualizarQtde(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: FUNCTION estoque.soma does not exist
+Sistema -> 09/12/2012 - 21:39:11
+	ce.model.dao.RepositorioEntrada.inserir(): Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 21:39:11
+	ce.model.regra.ControladorEntrada.inserir(): Erro ao tentar inserir entrada.
+joao.souza -> 09/12/2012 - 21:42:17
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+Sistema -> 09/12/2012 - 21:42:50
+	ce.model.dao.RepositorioEntrada.pesqNum(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+joao.souza -> 09/12/2012 - 21:42:50
+	ce.model.regra.ControladorEntrada.verificarSeExiste(): Erro ao tentar verificar entrada.
+Sistema -> 09/12/2012 - 21:44:33
+	ce.model.dao.RepositorioProduto.atualizarQtde(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? GROUP BY codProd' at line 1
+Sistema -> 09/12/2012 - 21:44:33
+	ce.model.dao.RepositorioEntrada.inserir(): Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 21:44:33
+	ce.model.regra.ControladorEntrada.inserir(): Erro ao tentar inserir entrada.
+Sistema -> 09/12/2012 - 21:48:47
+	ce.model.dao.RepositorioEntrada.pesqNum(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+joao.souza -> 09/12/2012 - 21:48:47
+	ce.model.regra.ControladorEntrada.verificarSeExiste(): Erro ao tentar verificar entrada.
+Sistema -> 09/12/2012 - 21:54:20
+	ce.model.dao.RepositorioProduto.atualizarQtde(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? GROUP BY codProd' at line 1
+Sistema -> 09/12/2012 - 21:54:20
+	ce.model.dao.RepositorioEntrada.alterar(): Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 21:54:20
+	ce.model.regra.ControladorEntrada.alterar(): ce.erro.RepositorioAlterarException: Erro ao tentar atualizar a quantidade do produto em estoque.
+Sistema -> 09/12/2012 - 22:18:51
+	ce.model.dao.RepositorioProduto.atualizarQtde(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+Sistema -> 09/12/2012 - 22:18:51
+	ce.model.dao.RepositorioEntrada.alterar(): Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 22:18:51
+	ce.model.regra.ControladorEntrada.alterar(): ce.erro.RepositorioAlterarException: Erro ao tentar atualizar a quantidade do produto em estoque.
+Sistema -> 09/12/2012 - 22:21:10
+	ce.model.dao.RepositorioProduto.atualizarQtde(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+Sistema -> 09/12/2012 - 22:21:10
+	ce.model.dao.RepositorioEntrada.alterar(): Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 22:21:10
+	ce.model.regra.ControladorEntrada.alterar(): ce.erro.RepositorioAlterarException: Erro ao tentar atualizar a quantidade do produto em estoque.
+joao.souza -> 09/12/2012 - 22:23:13
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+joao.souza -> 10/12/2012 - 18:23:49
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+Sistema -> 10/12/2012 - 18:26:48
+	ce.model.dao.RepositorioLocalEstoque.alterar(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'codUnid' in 'where clause'
+joao.souza -> 10/12/2012 - 18:26:48
+	ce.model.regra.ControladorLocalEstoque.alterar(): Erro ao tenrar alterar local de estoque.
+Sistema -> 10/12/2012 - 18:26:55
+	ce.model.dao.RepositorioLocalEstoque.alterar(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'codUnid' in 'where clause'
+joao.souza -> 10/12/2012 - 18:26:55
+	ce.model.regra.ControladorLocalEstoque.alterar(): Erro ao tenrar alterar local de estoque.
+adm.sys -> 10/12/2012 - 18:30:19
+	ce.model.regra.ControladorUsuario.validarLogin(): Usuário inválido!
+Sistema -> 10/12/2012 - 19:01:56
+	ce.model.dao.RepositorioSaida.listar(): com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'dtSaida' in 'order clause'
+joao.souza -> 10/12/2012 - 19:01:56
+	ce.model.regra.ControladorSaida.listar(): Erro ao tentar listar saída.
+joao.souza -> 10/12/2012 - 20:50:18
+	ce.model.regra.ControladorProduto.verificarSePodeInserir(): O produto informado já existe.
+joao.souza -> 10/12/2012 - 21:00:45
+	ce.model.regra.ControladorProduto.verificarSePodeInserir(): O produto informado já existe.
+Sistema -> 10/12/2012 - 21:01:12
+	ce.model.dao.RepositorioProduto.excluir(): java.sql.SQLException: No value specified for parameter 1
+joao.souza -> 10/12/2012 - 21:01:12
+	ce.model.regra.ControladorProduto.excluir(): Erro ao tentar exluir produto.
+Sistema -> 10/12/2012 - 21:01:21
+	ce.model.dao.RepositorioProduto.excluir(): java.sql.SQLException: No value specified for parameter 1
+joao.souza -> 10/12/2012 - 21:01:21
+	ce.model.regra.ControladorProduto.excluir(): Erro ao tentar exluir produto.
+Sistema -> 10/12/2012 - 21:17:50
+	ce.model.dao.RepositorioProduto.inserir(): com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after statement closed.
+joao.souza -> 10/12/2012 - 21:17:50
+	ce.model.regra.ControladorProduto.inserir(): Erro ao tentar inserir produto.
+joao.souza -> 10/12/2012 - 21:36:45
+	ce.model.regra.ControladorSaida.validarDados(): A quantidade da saída não pode ser maior que a quantade em estoque para este lote!
+root -> 11/12/2012 - 00:24:49
+	ce.util.GerenciadorConexao.conectar(): java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+joao.souza -> 11/12/2012 - 00:24:49
+	ce.model.regra.ControladorUsuario.validarLogin(): No momento não é possível validar o login.
+andre -> 21/10/2013 - 13:58:11
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+andre -> 21/10/2013 - 13:58:19
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+andre -> 21/10/2013 - 13:58:27
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+andre -> 21/10/2013 - 13:59:47
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+andre -> 21/10/2013 - 13:59:54
+	ce.model.regra.ControladorUsuario.validarLogin(): Senha inválida!
+andre -> 21/10/2013 - 14:04:29
+	ce.model.regra.ControladorUsuario.validarDados(): Campo com valor inválido!
+A senha deve ter seis ou mais caracteres.
+kjh -> 21/10/2013 - 14:08:24
+	ce.model.regra.ControladorUsuario.validarLogin(): Usuário inválido!
+admin -> 21/10/2013 - 14:10:57
+	ce.model.regra.ControladorFuncionario.validarDados(): CPF inválido!
+admin -> 21/10/2013 - 14:11:07
+	ce.model.regra.ControladorFuncionario.validarDados(): CPF inválido!
+admin -> 21/10/2013 - 14:11:43
+	ce.model.regra.ControladorFuncionario.validarDados(): CPF inválido!
+admin -> 21/10/2013 - 14:16:42
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo logradouro deve ser preenchido.
+admin -> 21/10/2013 - 14:17:04
+	ce.model.regra.ControladorFuncionario.validarDados(): CPF inválido!
+admin -> 21/10/2013 - 14:17:13
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo logradouro deve ser preenchido.
+admin -> 21/10/2013 - 14:46:34
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo logradouro deve ser preenchido.
+admin -> 21/10/2013 - 14:49:37
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo nome deve ser preenchido.
+admin -> 21/10/2013 - 14:49:44
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo bairro deve ser preenchido.
+admin -> 21/10/2013 - 14:49:47
+	ce.model.regra.ControladorFuncionario.validarDados(): O campo municipio deve ser preenchido.
