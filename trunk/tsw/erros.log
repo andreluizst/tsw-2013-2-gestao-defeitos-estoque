@@ -218,3 +218,19 @@ admin -> 21/10/2013 - 14:49:44
 	ce.model.regra.ControladorFuncionario.validarDados(): O campo bairro deve ser preenchido.
 admin -> 21/10/2013 - 14:49:47
 	ce.model.regra.ControladorFuncionario.validarDados(): O campo municipio deve ser preenchido.
+Sistema -> 21/10/2013 - 15:25:32
+	ce.model.dao.RepositorioFuncionario.inserir(): com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'CEP' at row 1
+admin -> 21/10/2013 - 15:25:32
+	ce.model.regra.ControladorFuncionario.inserir(): Erro ao tentar inserir funcionário.
+Sistema -> 21/10/2013 - 15:25:59
+	ce.model.dao.RepositorioFuncionario.inserir(): com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'CEP' at row 1
+admin -> 21/10/2013 - 15:25:59
+	ce.model.regra.ControladorFuncionario.inserir(): Erro ao tentar inserir funcionário.
+Sistema -> 21/10/2013 - 15:26:49
+	ce.model.dao.RepositorioFuncionario.inserir(): com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'CEP' at row 1
+admin -> 21/10/2013 - 15:26:49
+	ce.model.regra.ControladorFuncionario.inserir(): Erro ao tentar inserir funcionário.
+Sistema -> 21/10/2013 - 15:30:47
+	ce.model.dao.RepositorioFuncionario.inserir(): com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'Fone' at row 1
+admin -> 21/10/2013 - 15:30:47
+	ce.model.regra.ControladorFuncionario.inserir(): Erro ao tentar inserir funcionário.
